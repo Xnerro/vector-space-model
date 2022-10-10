@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('public', path='asset/style.css')}}" >
+    <title>Search</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Vector Space Model Search Engine</h1>
+        <form action="{{ url_for('search') }}" method="POST">
+            <input type="text" name="query" placeholder="Search..."  value="{{ query }}"/>
+            <button type="submit">Search</button>
+        </div>
+        <div class="box-item">
+            {% for i in result%}
+            <div class="item">
+                <h1>doc{{ i }}</h1>
+                <p>{{ data[i] }}</p> 
+            </div>
+                {% endfor %}
+        </div>
+</body>
+</html>

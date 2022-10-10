@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fafafa;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+body h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.box {
+    width: 800px;
+    margin-top: 2rem;
+}
+
+.box form {
+    display: flex;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: medium;
+}
+
+.box button {
+    width: 125px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.box button:hover {
+    background: rgb(162, 162, 162);
+    cursor: pointer;
+}
+
+.box-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    overflow: auto;
+    gap: 15px 15px;
+}
+
+.item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: .8rem;
+    flex-wrap: nowrap;
+    overflow: auto;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(56, 56, 56, 0.675);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .2);
+}
+
+.item::-webkit-scrollbar {
+    display: none;
+}
+
+.item h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.item p {
+    font-size: .8rem;
+    width: 180px;
+    height: 180px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.item:not(:last-child) {
+    margin-right: 10px;
+}
